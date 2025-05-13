@@ -1,45 +1,58 @@
 <h1>Welcome to the Self Improvement AI</h1>
 <p>This is your custom homepage 🎉</p>
 
-<div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+<div className="min-h-screen bg-gradient-to-br from-pink-100 via-white to-purple-100">
   {/* Header */}
-  <header className="flex justify-between items-center px-8 py-4">
+  <header className="flex justify-between items-center px-8 py-4 bg-white/80 backdrop-blur-md shadow-sm">
     <div className="flex items-center space-x-2">
-      <div className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center font-bold text-xl">AI</div>
-      <span className="font-bold text-lg">Self Improvement AI</span>
+      <div className="w-6 h-6 bg-cyan-400 rounded-full flex items-center justify-center font-bold text-white">AI</div>
+      <span className="font-bold text-lg text-gray-800">Self Improvement AI</span>
     </div>
-    <nav className="flex space-x-6">
-      <a href="#" className="hover:underline">Features</a>
-      <a href="#" className="hover:underline">Resources</a>
-      <a href="#" className="hover:underline">Community</a>
-      <a href="#" className="hover:underline">Pricing</a>
+    <nav className="flex items-center space-x-6">
+      <a href="#" className="text-gray-700 hover:underline">Features</a>
+      <a href="#" className="text-gray-700 hover:underline">Blog</a>
+      <a href="#" className="text-gray-700 hover:underline">Pricing</a>
+      <button className="ml-4 px-4 py-2 rounded-full border border-cyan-400 text-cyan-600 font-semibold hover:bg-cyan-50 transition">Sign In</button>
+      <button className="ml-2 px-4 py-2 rounded-full bg-cyan-400 text-white font-semibold shadow hover:bg-cyan-500 transition">Get Started</button>
     </nav>
-    <div className="flex space-x-2">
-      <button className="px-4 py-2 rounded bg-gray-700">Sign In</button>
-      <button className="px-4 py-2 rounded bg-cyan-400 text-black font-bold">Get Started</button>
-    </div>
   </header>
 
   {/* Hero Section */}
-  <section className="flex flex-col md:flex-row items-center justify-between px-8 py-16 relative">
-    <div className="max-w-xl z-10">
-      <h1 className="text-5xl font-extrabold mb-4">Unlock Your Best Self</h1>
-      <p className="text-xl mb-8">Your AI-powered companion for personal growth, habit tracking, and self-improvement.</p>
-      <button className="px-8 py-3 rounded bg-cyan-400 text-black font-bold text-lg shadow-lg">Try it Free</button>
+  <section className="flex flex-col items-center text-center py-20 px-4">
+    <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Your Personal Growth AI Coach</h1>
+    <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl">
+      Unlock your best self with AI-powered habit tracking, daily reflections, and actionable insights. 
+      <span className="block mt-2 text-cyan-600 font-semibold">Grow faster, stay motivated, and achieve your goals.</span>
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+      <button className="px-8 py-3 rounded-full bg-cyan-400 text-white font-bold text-lg shadow hover:bg-cyan-500 transition">Get Started - It's Free</button>
+      <button className="px-8 py-3 rounded-full border border-cyan-400 text-cyan-600 font-bold text-lg hover:bg-cyan-50 transition">Learn More</button>
     </div>
-    {/* Futuristic background effect */}
-    <div className="absolute right-0 top-0 w-2/3 h-full pointer-events-none z-0">
-      <div className="w-full h-full bg-gradient-to-tl from-cyan-400/30 via-transparent to-black blur-2xl"></div>
+    {/* Feature highlight */}
+    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-cyan-700 font-semibold text-lg mb-8">
+      <span>📚 Track habits</span>
+      <span>•</span>
+      <span>🧠 Reflect daily</span>
+      <span>•</span>
+      <span>🚀 Grow 10x faster</span>
     </div>
-    {/* Placeholder for hero image */}
-    <div className="w-full md:w-1/2 flex justify-center z-10 mt-8 md:mt-0">
-      <div className="w-80 h-56 bg-gray-700 flex items-center justify-center relative">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <svg width="100%" height="100%">
-            <line x1="0" y1="0" x2="100%" y2="100%" stroke="#aaa" strokeWidth="2"/>
-            <line x1="100%" y1="0" x2="0" y2="100%" stroke="#aaa" strokeWidth="2"/>
-          </svg>
-        </div>
+    {/* Device mockup with placeholder */}
+    <div className="relative flex justify-center mt-8">
+      {/* Tablet placeholder */}
+      <div className="w-[500px] h-[300px] bg-gray-200 rounded-3xl shadow-lg border-4 border-white flex items-center justify-center relative z-10">
+        <svg width="100%" height="100%">
+          <line x1="0" y1="0" x2="100%" y2="100%" stroke="#bbb" strokeWidth="4"/>
+          <line x1="100%" y1="0" x2="0" y2="100%" stroke="#bbb" strokeWidth="4"/>
+        </svg>
+        <span className="absolute bottom-4 left-4 text-gray-400 font-semibold">App Preview</span>
+      </div>
+      {/* Phone placeholder, overlapping */}
+      <div className="absolute right-[-60px] bottom-[-40px] w-[180px] h-[340px] bg-gray-200 rounded-2xl shadow-xl border-4 border-white flex items-center justify-center z-20">
+        <svg width="100%" height="100%">
+          <line x1="0" y1="0" x2="100%" y2="100%" stroke="#bbb" strokeWidth="4"/>
+          <line x1="100%" y1="0" x2="0" y2="100%" stroke="#bbb" strokeWidth="4"/>
+        </svg>
+        <span className="absolute bottom-4 left-4 text-gray-400 font-semibold text-xs">Mobile Preview</span>
       </div>
     </div>
   </section>
